@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>signLobby</ion-title>
+    <ion-button filL="clear" style="float:left" routerLink="/home">
+      <ion-icon name="arrow-back-circle-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="box">
+    <ion-row class="align">
+        <ion-button  routerLink="/sign-in">
+          Iniciar Sesión
+        </ion-button>
+    </ion-row>
+    <ion-row class="align">
+        <ion-button routerLink="/register">
+          Registrarse
+        </ion-button>
+    </ion-row>
+  </div>
+    
+</ion-content>

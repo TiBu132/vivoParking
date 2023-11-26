@@ -1,0 +1,11 @@
+.align{
+    align-self:center;
+    justify-self: center;
+    margin-top:500px;
+}
+
+.box{
+    display: grid;
+    gap: 5px;
+    grid-auto-rows: 100px;
+}

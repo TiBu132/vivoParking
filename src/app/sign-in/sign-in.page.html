@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>signIn</ion-title>
+    <ion-button filL="clear" style="float:left" routerLink="/sign-lobby">
+      <ion-icon name="arrow-back-circle-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="form">
+    <ion-input label="Usuario" labelPlacement="floating" formControlName="usuario">
+    </ion-input>
+    <ion-input label="Contraseña" labelPlacement="floating" formControlName="pass" type="password">
+    </ion-input>
+    <input
+        class="btn"
+        type="submit"
+        value="Ingresar"
+        [disabled]="(form.status) === 'INVALID'"
+        (click)="getUser()"
+      />
+  </form>
+  
+</ion-content>
