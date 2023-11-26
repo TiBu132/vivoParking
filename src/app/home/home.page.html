@@ -1,9 +1,8 @@
 <ion-toolbar>
-  <ion-header>
+  <ion-header class="header">
     <ion-title class="ion-text-center">
-      Home
       <ion-button filL="clear" class="user_btn" routerLink="/sign-lobby">
-        <ion-icon name="person-circle-outline"></ion-icon>
+        <ion-icon class="iconuser" name="person-circle-outline"></ion-icon>
       </ion-button>
     </ion-title>
   </ion-header>
@@ -12,16 +11,32 @@
 <ion-content [fullscreen]="true">
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title class="titlecard">VER ESTACIONAMIENTOS</ion-card-title>
     </ion-card-header>
-  
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
+    <ion-button class="btncard">VER</ion-button>
   </ion-card>
-  <ion-img src="">
 
-  </ion-img>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="titlecard">ARRENDAR ESTACIONAMIENTOS</ion-card-title>
+    </ion-card-header>
+    <ion-button class="btncard">ARRENDAR</ion-button>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="titlecard">REGISTRAR ESTACIONAMIENTO</ion-card-title>
+    </ion-card-header>
+    <ion-button class="btncard">REGISTRAR</ion-button>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="titlecard">CONTÁCTATE CON NOSOTROS</ion-card-title>
+    </ion-card-header>
+    <ion-button class="btncard">CONTACTO</ion-button>
+  </ion-card>
 </ion-content>
+
+<ion-footer class="footer"></ion-footer>
 
