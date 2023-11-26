@@ -21,6 +21,6 @@ export class ApiService {
   }
 
   registerUser(data: any): Observable<any> {
-    return this.http.post(this.apiURL+'/users/', data);
+    return this.http.post(this.apiURL+'/register', data);
   }
 }

@@ -28,7 +28,6 @@ export class SignInPage implements OnInit {
   }
 
   getUser() {
-    console.log(this.form.value)
     this.api.postData(this.form.value).subscribe((response)=>{
       this.router.navigate(['./home'])
     });

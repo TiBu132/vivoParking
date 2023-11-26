@@ -1,25 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>signIn</ion-title>
-    <ion-button filL="clear" style="float:left" routerLink="/sign-lobby">
-      <ion-icon name="arrow-back-circle-outline"></ion-icon>
-    </ion-button>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar >
+  <ion-header style="background-color:#8994E6">
+    <ion-title class="ion-text-center">
+      Iniciar Sesión
+      <ion-button filL="clear" class="user_btn" routerLink="/home">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-title>
+  </ion-header>
+</ion-toolbar>
 
 <ion-content [fullscreen]="true">
+  <div class="ion-text-center texto">
+    Inicia Sesión o Registrate
+  </div>
   <form [formGroup]="form">
-    <ion-input label="Usuario" labelPlacement="floating" formControlName="usuario">
-    </ion-input>
-    <ion-input label="Contraseña" labelPlacement="floating" formControlName="pass" type="password">
-    </ion-input>
-    <input
+    <div class="box">
+      <ion-item>
+        <ion-input 
+          label="Usuario" 
+          labelPlacement="floating" 
+          formControlName="usuario"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input 
+          label="Contraseña" 
+          labelPlacement="floating" 
+          formControlName="pass" 
+          type="password"
+        ></ion-input>
+      </ion-item>
+    </div>
+    <div class="ion-text-center padd">
+      <input
         class="btn"
         type="submit"
         value="Ingresar"
         [disabled]="(form.status) === 'INVALID'"
         (click)="getUser()"
       />
+    </div>
+    <div class="ion-text-center padd">
+      <input
+        class="btn-register"
+        type="submit"
+        value="Registrate"
+        routerLink="/register"
+      />
+    </div>
+      
   </form>
   
 </ion-content>
