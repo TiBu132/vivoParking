@@ -23,4 +23,16 @@ export class ApiService {
   registerUser(data: any): Observable<any> {
     return this.http.post(this.apiURL+'/register', data);
   }
+
+  getEstacionamiento(): Observable<any> {
+    return this.http.get(this.apiURL+'/estacionamiento');
+  }
+  
+  registerEstacionamiento(data: any): Observable<any> {
+    return this.http.post(this.apiURL+'/estacionamiento', data);
+  }
+
+  registerVehiculo(data: any): Observable<any> {
+    return this.http.post(this.apiURL+'/vehiculo', data);
+  }
 }

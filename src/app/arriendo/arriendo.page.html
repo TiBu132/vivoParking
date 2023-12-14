@@ -1,0 +1,27 @@
+<ion-header class="header">
+  <ion-text class="title">Arriendo</ion-text>
+  <ion-button filL="clear" class="user_btn" routerLink="/home">
+    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+  </ion-button>
+</ion-header>
+  <ion-card *ngFor="let e of estacionamiento">
+    <ion-card-subtitle style="margin:10px 15px; font-size:20px">
+      {{ e.patente }}
+    </ion-card-subtitle>
+    <ion-card-title style="margin:10px 10px;">
+      {{ e.ubicacion }}
+    </ion-card-title>
+    <ion-card-content>
+      Nombre del Dueño: {{ e.nombre_usuario_duenno }} <br>
+      Costo: {{ e.costo}} <br>
+      Espacio: {{ e.espacio}}m², <br> estado: excelente
+      <ion-button style="float:right; padding-bottom:10px" routerLink="/">Arrendar</ion-button>
+    </ion-card-content>
+    
+  </ion-card>
+<ion-content [fullscreen]="true">
+
+</ion-content>
+
+<ion-footer class="footer">
+</ion-footer>

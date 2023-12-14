@@ -1,13 +1,11 @@
-<ion-toolbar >
-  <ion-header style="background-color:#8994E6">
-    <ion-title class="ion-text-center">
-      Iniciar Sesión
-      <ion-button filL="clear" class="user_btn" routerLink="/home">
-        <ion-icon name="arrow-back-circle-outline"></ion-icon>
-      </ion-button>
-    </ion-title>
-  </ion-header>
-</ion-toolbar>
+<ion-header class="header">
+  <ion-text class="title">
+    Iniciar Sesión
+  </ion-text>
+  <ion-button filL="clear" class="user_btn" routerLink="/home">
+    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+  </ion-button>
+</ion-header>
 
 <ion-content [fullscreen]="true">
   <div class="ion-text-center texto">
@@ -48,7 +46,7 @@
         routerLink="/register"
       />
     </div>
-      
   </form>
-  
 </ion-content>
+
+<ion-footer class="footer"></ion-footer>

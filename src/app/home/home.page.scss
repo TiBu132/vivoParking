@@ -1,8 +1,7 @@
-.title{
-  display:flex;
-  justify-content: center;
-  padding-top:20px;
-  padding-left:20px;
+.margen{
+  margin:0 20px;
+  margin-top:70px;
+  margin-bottom:20px;
 }
 
 .user_btn{
@@ -10,26 +9,29 @@
 }
 
 .titlecard {
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: bolder;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top:10px;
 }
 
 .btncard {
-  margin-left: 90px;
-  padding-bottom: 20px;
-  width: 50%;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  width: 40%;
   font-weight: bold;
-}
-
-.header {
-  padding: 20px;
-  background-color:#8994E6;
+  float:right;
+  color:black;
 }
 
 .iconuser {
   color: white;
 }
 
-.footer {
-  padding: 40px;
-  background-color: #8994E6;
+.footer-text{
+  color:white;
+  font-size:12px;
+  font-weight: bold;
+  float:left;
 }

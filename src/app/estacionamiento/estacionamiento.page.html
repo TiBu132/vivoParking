@@ -1,0 +1,45 @@
+<ion-header class="header">
+  <ion-text class="title">
+    Registrar Estacionamiento
+  </ion-text>
+  <ion-button filL="clear" class="user_btn" routerLink="/home">
+    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+  </ion-button>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="form" (ngSubmit)="RegisterEstacionamiento()">
+
+    <ion-item class="inputform">
+      <ion-input label="Ubicación" labelPlacement="floating" formControlName="ubicacion"></ion-input>
+    </ion-item>
+
+    <ion-item class="inputform">
+      <ion-input label="Costo por hora" labelPlacement="floating" formControlName="costo"></ion-input>
+    </ion-item>
+    
+    <ion-item class="inputform">
+      <ion-input label="Patente" labelPlacement="floating" formControlName="patente"></ion-input>
+    </ion-item>
+    
+
+    <ion-item class="inputform">
+      <ion-input label="Nombre de Usuario" labelPlacement="floating" formControlName="nombre_usuario_dueño"></ion-input>
+    </ion-item>
+
+    <ion-item class="inputform">
+      <ion-input label="Espacio" labelPlacement="floating" formControlName="espacio"></ion-input>
+    </ion-item>
+
+    <ion-item class="inputform">
+      <ion-input label="Descripción" labelPlacement="floating" formControlName="descripcion"></ion-input>
+    </ion-item>
+
+    <ion-button class="btnreg" color="warning" (click)="RegisterEstacionamiento()">
+      REGISTRAR
+    </ion-button>
+  </form>
+</ion-content>
+
+<ion-footer class="footer">
+</ion-footer>

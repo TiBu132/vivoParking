@@ -24,3 +24,22 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+.footer {
+    background-color: #062e55;
+    padding: 50px;
+}
+
+.header {
+    background-color: #062e55;
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+    padding-top:20px;
+    color:white;
+    font-size:30px;
+    font-weight: bold;
+  }
+  

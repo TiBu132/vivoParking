@@ -1,0 +1,42 @@
+<ion-header class="header">
+  <ion-text class="title">
+    Registrar Vehículo
+  </ion-text>
+  <ion-button filL="clear" class="user_btn" routerLink="/home">
+    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+  </ion-button>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="form" (ngSubmit)="RegisterVehiculo()">
+
+    <ion-item class="inputform">
+      <ion-input label="Patente" labelPlacement="floating" formControlName="patente"></ion-input>
+    </ion-item>
+
+    <ion-item class="inputform">
+      <ion-input label="Marca" labelPlacement="floating" formControlName="marca"></ion-input>
+    </ion-item>
+    
+    <ion-item class="inputform">
+      <ion-input label="Modelo" labelPlacement="floating" formControlName="modelo"></ion-input>
+    </ion-item>
+    
+
+    <ion-item class="inputform">
+      <ion-input label="Capacidad" labelPlacement="floating" formControlName="capacidad"></ion-input>
+    </ion-item>
+
+    <ion-item class="inputform">
+      <ion-input label="Nombre de usuario" labelPlacement="floating" formControlName="nombre_usuario"></ion-input>
+    </ion-item>
+
+    <ion-button class="btnreg" color="warning" (click)="RegisterVehiculo()">
+      REGISTRAR
+    </ion-button>
+
+  </form>
+</ion-content>
+
+<ion-footer class="footer">
+</ion-footer>

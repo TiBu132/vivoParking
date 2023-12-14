@@ -18,6 +18,7 @@ export class RegisterPage implements OnInit {
       nombre_usuario:['', [Validators.required]],
       pnombre:['', [Validators.required]],
       ppaterno:['', [Validators.required]],
+      contraseña:['', [Validators.required]],
       rut:['', [Validators.required]],
       direccion:['', [Validators.required]],
       num_casa:['', [Validators.required]],

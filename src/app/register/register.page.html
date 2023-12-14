@@ -1,31 +1,38 @@
-<ion-toolbar>
+<ion-header class="header">
+  <ion-text class="title">
+    Registrar
+  </ion-text>
   <ion-button filL="clear" style="float:left" routerLink="/sign-in">
     <ion-icon name="arrow-back-circle-outline"></ion-icon>
   </ion-button>
-  <ion-header>
-    <ion-title class="ion-text-center" style="padding-bottom: 20px;">
-      Registrar
-    </ion-title>
-  </ion-header>
-</ion-toolbar>
+</ion-header>
 
 <ion-content [fullscreen]="true">
-  <select [(ngModel)]="formulario">
-    <option value="0"> Seleccione </option>
-    <option value="1"> Cliente</option>
-    <option value="2"> Dueño</option>
-    <option value="3"> Test</option>
-  </select>
+
+  <div class="ion-text-center margen">
+    <ion-text>
+      Seleccione que tipo de usuario quiere registrar
+    </ion-text>
+  </div>
+  <div class="ion-text-center margen">
+    <select [(ngModel)]="formulario">
+      <option value="0"> Seleccione </option>
+      <option value="1"> Cliente</option>
+      <option value="2"> Dueño</option>
+    </select>
+  </div>
+  
 
   <div *ngIf="formulario == 1">
     <form>
-      <ion-input label="Nombre" labelPlacement="floating"></ion-input>
-      <ion-input label="Apellido" labelPlacement="floating"></ion-input>
-      <ion-input label="RUT" labelPlacement="floating"></ion-input>
-      <ion-input label="Dirección" labelPlacement="floating"></ion-input>
-      <ion-input label="N°Casa o Apartamento" labelPlacement="floating"></ion-input>
-      <ion-input label="Tipo de Cuenta Bancaria" labelPlacement="floating"></ion-input>
-      <ion-input label="Vehículo/s" labelPlacement="floating"></ion-input>
+      <ion-input label="Nombre" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="Apellido" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="Contraseña" labelPlacement="floating" class="ipts-form" type="password"></ion-input>
+      <ion-input label="RUT" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="Dirección" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="N°Casa o Apartamento" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="Tipo de Cuenta Bancaria" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="Vehículo/s" labelPlacement="floating" class="ipts-form"></ion-input>
   
       <ion-button>
         Registrar
@@ -35,31 +42,15 @@
 
   <div *ngIf="formulario == 2">
     <form>
-      <ion-input label="Nombre" labelPlacement="floating"></ion-input>
-      <ion-input label="Apellido" labelPlacement="floating"></ion-input>
-      <ion-input label="RUT" labelPlacement="floating"></ion-input>
-      <ion-input label="Dirección" labelPlacement="floating"></ion-input>
-      <ion-input label="N°Casa o Apartamento" labelPlacement="floating"></ion-input>
-      <ion-input label="Tipo de Cuenta Bancaria" labelPlacement="floating"></ion-input>
-      <ion-input label="Ubicación Estacionamiento" labelPlacement="floating"></ion-input>
+      <ion-input label="Nombre" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="Apellido" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="RUT" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="Dirección" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="N°Casa o Apartamento" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="Tipo de Cuenta Bancaria" labelPlacement="floating" class="ipts-form"></ion-input>
+      <ion-input label="Ubicación Estacionamiento" labelPlacement="floating" class="ipts-form"></ion-input>
   
       <ion-button>
-        Registrar
-      </ion-button>
-    </form>
-  </div>
-
-  <div *ngIf="formulario == 3">
-
-    <form [formGroup]="form" (ngSubmit)="registerUser()">
-      <ion-input label="Nombre de Usuario" labelPlacement="floating" formControlName="nombre_usuario"></ion-input>
-      <ion-input label="Nombre" labelPlacement="floating" formControlName="pnombre"></ion-input>
-      <ion-input label="Apellido" labelPlacement="floating" formControlName="ppaterno"></ion-input>
-      <ion-input label="RUT" labelPlacement="floating" formControlName="rut"></ion-input>
-      <ion-input label="Dirección" labelPlacement="floating" formControlName="direccion"></ion-input>
-      <ion-input label="N°Casa o Apartamento" labelPlacement="floating" formControlName="num_casa"></ion-input>
-      <ion-input label="Contraseña" labelPlacement="floating" formControlName="pass_usuario"></ion-input>
-      <ion-button (click)="registerUser()">
         Registrar
       </ion-button>
     </form>

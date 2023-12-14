@@ -1,43 +1,38 @@
-<ion-toolbar>
-  <ion-header class="header">
-    <ion-title class="ion-text-center">
+<ion-header class="header">
+  <div>
+    <ion-text class="title">
       Home
-      <ion-button filL="clear" class="user_btn" routerLink="/sign-in">
-        <ion-icon name="person-circle-outline"></ion-icon>
-      </ion-button>
-    </ion-title>
-  </ion-header>
-</ion-toolbar>
+    </ion-text>
+  </div>
+  <ion-button filL="clear" class="user_btn" routerLink="/sign-in" style="float:right">
+    <ion-icon name="person-circle-outline"></ion-icon>
+  </ion-button>
+</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card>
+  <ion-card class="margen">
     <ion-card-header>
       <ion-card-title class="titlecard">VER ESTACIONAMIENTOS</ion-card-title>
     </ion-card-header>
-    <ion-button class="btncard">VER</ion-button>
+    <ion-button class="btncard" routerLink="/arriendo" fill="clear">></ion-button>
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title class="titlecard">ARRENDAR ESTACIONAMIENTOS</ion-card-title>
-    </ion-card-header>
-    <ion-button class="btncard">ARRENDAR</ion-button>
-  </ion-card>
-
-  <ion-card>
+  <ion-card class="margen">
     <ion-card-header>
       <ion-card-title class="titlecard">REGISTRAR ESTACIONAMIENTO</ion-card-title>
     </ion-card-header>
-    <ion-button class="btncard">REGISTRAR</ion-button>
+    <ion-button class="btncard" routerLink="/estacionamiento" fill="clear">></ion-button>
   </ion-card>
 
-  <ion-card>
+  <ion-card class="margen">
     <ion-card-header>
-      <ion-card-title class="titlecard">CONTÁCTATE CON NOSOTROS</ion-card-title>
+      <ion-card-title class="titlecard">REGISTRAR VEHÍCULO</ion-card-title>
     </ion-card-header>
-    <ion-button class="btncard">CONTACTO</ion-button>
+    <ion-button class="btncard" routerLink="/vehiculo" fill="clear">></ion-button>
   </ion-card>
 </ion-content>
 
-<ion-footer class="footer"></ion-footer>
+<ion-footer class="footer">
+  <ion-text class="footer-text">Contáctate con nosotros: <br> Correo: vivoParking&#64;duocuc.cl <br> Teléfono: +56912345678</ion-text>
+</ion-footer>
 
